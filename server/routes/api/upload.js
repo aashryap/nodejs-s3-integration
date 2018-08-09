@@ -2,8 +2,7 @@ const Busboy = require('busboy');
 const AWS = require('aws-sdk');
 
 const BUCKET_NAME = "node-s3-aashray";
-const IAM_USER_KEY = "AKIAIP6NNLYWIFEWDASA";
-const IAM_USER_SECRET = "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";
+
 
 module.exports = (app) => {
     app.post('/api/upload', function(req, res, next){
